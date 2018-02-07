@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Plantilla: para la realizaciï¿½n de informes.
+%Curso:     Simulaciï¿½n estadï¿½stica.
+%Profesor:  Johann A. Ospina.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Establece el tipo de documento (artï¿½culo), tamaï¿½o de letra (10pt) a una columna.
+\documentclass[letterpaper,12pt,onecolumn,titlepage]{article} 
+ 
+ 
+% Cargar paquetes
+\usepackage{verbatim}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{ucs}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{fancyhdr}
+\usepackage[comma,authoryear]{natbib}
+\usepackage{url} %paquete para definir url
+\usepackage{hyperref}  %hipervinculos
+
+%Estilo de la pï¿½gina
+\pagestyle{fancy}
+
+%Establecer el margen
+\marginsize{2cm}{2cm}{1cm}{1cm}
+\setlength{\headheight}{13.1pt}
+
+
+% Portada
+\title{
+    \textbf{Introducción al Equating}\
+    ~\\{Simulación Estadística}   
+    }
+\author{
+    {Kevin Steven Garcia Chica Cod. 1533173}
+ ~\\{Cesar Andres Saavedra Vanegas Cod. 1628466}}
+
+
+
+
+
+
+\date{
+     \textbf{Universidad Del Valle}\   
+    ~\\{Facultad De Ingenieria}
+    ~\\{Estadistica}
+    ~\\{Febrero}
+    ~\\{2018}}
+ 
+ 
+ 
+\decimalpoint %Poner punto decimal
+ 
+\begin{document}
+ 
+% Se aplica el formato a las pï¿½ginas. Se despliegan: portada e ï¿½ndices de materias, figuras y tablas
+\renewcommand{\listtablename}{}
+\renewcommand{\tablename}{Tabla}
+\maketitle
+\setcounter{page}{2}
+\tableofcontents{}
+%\thispagestyle{empty}
+%\newpage
+\listoffigures{}
+\listoftables{}
+
+\thispagestyle{empty}
+
+\newpage
+\fancyhead{}
+\fancyfoot{}
+ 
+% Encabezado y pie de pagina
+\lhead{Simulación Estadística}
+\lfoot{Universidad Del Valle}
+\rfoot{\thepage}
+
+% Estilo de la bibliografï¿½a
+\bibliographystyle{apalike}
+ 
+% Desarrollo de los contenidos del documento
+\begin{center}
+\textbf{\title{EQUATING}}
+\end{center}
+
+
+~\\ Equating (equiparando) de forma general, es un proceso estadístico cuyo objetivo o finalidad es ajustar los puntajes de dos formas distintas de una misma prueba; con esto, se busca relacionar el puntaje de una forma de una prueba y su equivalente en la otra forma con la cual se quiere comparar o equiparar, en otras palabras, lo que se busca aplicando Equating es que los puntajes en los formularios de prueba se puedan usar indistintamente.
+
+~\\ Debemos tener en cuenta que condiciones o supuestos se debe cumplir para poder aplicar Equating. Para comparar dos formas diferentes de un test se deben cumplir básicamente los siguientes 5 supuestos:
+~\begin{itemize}
+\item Simetría
+\item Igual o cercana confiabilidad
+\item Equidad
+\item Invarianza poblacional
+\item Igual constructo
+\end{itemize}
+\bibliography{Bibliografia}
+\end{document}
+
+
+
+
+
+
+
+
