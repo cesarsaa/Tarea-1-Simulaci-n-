@@ -1,6 +1,14 @@
+#--------------------------------------------------------------#
 
-#--------------------------------------------------------------
+#Kevin Steven Garcia Chica - 1533173
+#Cesar A. Saavedra Vanegas - 1628466
+#Simulacion Estadistica 
+#Tarea 1 
+#Equating 
 
+#--------------------------------------------------------------#
+
+library(equate)
 # See vignette("equatevignette") and Albano (2016) for a
 # description of methods and additional examples
 # Random groups equating for (1) identity, (2) mean,
@@ -61,3 +69,9 @@ meq4 <- equate(m367, m567, type = "equip", method = "freq",
 meq <- equate(m367, m567, type = "mean", method = "nom")
 plot(meq1, meq2, meq3, meq4, meq, req[[1]])
 
+#-----------------Graficos----------------------------------------------
+par(mfrow=c(1,3))
+plot(req1, req2, req3, req4, req5[[1]], addident = FALSE)
+plot(req1, req2, req3, req4, addident = FALSE, out = "se",
+     legendplace = "topleft")
+plot(meq1, meq2, meq3, meq4, meq, req[[1]])
